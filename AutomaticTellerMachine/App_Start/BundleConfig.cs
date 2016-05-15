@@ -26,6 +26,8 @@ namespace AutomaticTellerMachine
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            // optimisation such as use minified versions of files and combine files to make a single minified file
+            BundleTable.EnableOptimizations = false;
         }
     }
 }
