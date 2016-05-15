@@ -1,0 +1,11 @@
+﻿@helper formatAmount(decimal amount)
+{
+
+    var color = "blue";
+    if (amount < 0)
+    {
+        color = "red";
+    }
+
+    <span style="color:@color">@String.Format("{0:c}", amount)</span>
+}

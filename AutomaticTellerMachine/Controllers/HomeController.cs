@@ -9,6 +9,7 @@ namespace AutomaticTellerMachine.Controllers
     public class HomeController : Controller
     {
         //GET /Home/Index
+        
         public ActionResult Index()
         {
             return View();
@@ -24,7 +25,7 @@ namespace AutomaticTellerMachine.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.TheMessage = "Having trouble?, Send us a message";
+            ViewBag.ResponseMessage = "Having trouble?, Send us a message";
 
             return View();
         }
@@ -38,7 +39,8 @@ namespace AutomaticTellerMachine.Controllers
         public ActionResult Contact(string message) 
         {
             //TODO: Send message to HQ
-            ViewBag.TheMessage = "Thanks we got your message";
+            ViewBag.YourMessage = message;
+            ViewBag.ResponseMessage = "Thanks we got your message";
 
             return View();
         }
@@ -58,4 +60,6 @@ namespace AutomaticTellerMachine.Controllers
 
         }
     }
+
+   
 }

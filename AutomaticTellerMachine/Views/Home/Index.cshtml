@@ -29,3 +29,17 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+        you are using @Request.Browser.Browser and that is ok
+
+@{ var amounts = new List<Decimal> { 100, 29.9m, -40, 890, 78.9m, -98.7m };
+    
+}
+    
+    <ul>
+        @foreach (decimal amount in amounts) {
+
+            <li>@MyHelpers.formatAmount(amount)</li>
+        }
+
+    </ul>
+
