@@ -18,7 +18,7 @@ namespace AutomaticTellerMachine.Controllers
         // GET /Home/About
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "A web based ATM using ASP.NET ";
 
             return View();
         }
