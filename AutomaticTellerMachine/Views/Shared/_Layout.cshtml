@@ -34,7 +34,7 @@
         @RenderBody()  @*here we inject to content on the view file*@
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - MVC ATM by Jonathan Maldonado</p>
+            <p>&copy; @DateTime.Now.Year - MVC ATM by Jonathan Maldonado - @Html.Action("Serial","Home", new { LetterCase="upper"})</p>
         </footer>
     </div>
 

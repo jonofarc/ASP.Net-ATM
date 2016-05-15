@@ -51,10 +51,12 @@ namespace AutomaticTellerMachine.Controllers
             var SerialNumber = "ASPNETMVCATM1";
             if (LetterCase == "lower")
             {
-                return Content (SerialNumber.ToLower());
+                return Content(SerialNumber.ToLower());
+            } else if (LetterCase == "upper") {
+                return Content(SerialNumber);
             }
             else {
-                return Json(new {name="Serial", value=SerialNumber }, JsonRequestBehavior.AllowGet);
+                return Json(new { name = "Serial", value = SerialNumber }, JsonRequestBehavior.AllowGet);
             }
             
 
