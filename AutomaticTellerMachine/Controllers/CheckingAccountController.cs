@@ -14,6 +14,14 @@ namespace AutomaticTellerMachine.Controllers
         {
             return View();
         }
+        public void Foo(int x) {
+
+        }
+
+        public void Foo(string y)
+        {
+
+        }
 
         // GET: CheckingAccount/Details
         public ActionResult Details()
